@@ -1,6 +1,9 @@
 # qrtest
  
 THish is what views.py does 
+
+
+
 We retrieve the posted QR code from request.data assuming it's posted as 'qr_code' in the request data.
 
 We attempt to find a QRCode object in the database that matches the posted QR code.
