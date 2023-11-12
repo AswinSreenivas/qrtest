@@ -37,6 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'api',
+    "rest_framework",
+    "corsheaders",
 ]
 
 MIDDLEWARE = [
@@ -75,8 +78,12 @@ WSGI_APPLICATION = 'bus_system.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'QR1',
+        'USER': 'root',
+        'PASSWORD': 'W@2915djkq#',
+        'HOST': '127.0.0.1',  #Use '127.0.0.1' for some systems
+        'PORT': '3306',  # Leave this empty for the default MySQL port (usually 3306)
     }
 }
 
